@@ -26,15 +26,11 @@ public class MixedNumber {
         this.fragment = fragment;
         fragment.changeToBasicShape();
     }
-
     public MixedNumber(int number, int numerator, int denominator) {
         this.number = number;
         this.fragment= new Fragment(numerator, denominator);
         fragment.changeToBasicShape();
     }
-
-
-
 
 @Override
     public String toString() {

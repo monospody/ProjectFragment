@@ -25,8 +25,26 @@ public class Main {
         System.out.println(mr.add(f1, f2));
         System.out.println(mr.mul(f1,f2));
         System.out.println(mr.div(f1,f2));
-
         //MyMath.add(f1,f2);
+
+        System.out.println(" ");
+
+        Rectangle re = new Rectangle(12,5);
+        System.out.println(re.calcDiagonal());
+        re.setFill(true);
+        re.showRectangle();
+        re.print();
+
+        System.out.println(" ");
+
+        Circle ci = new Circle (5);
+        System.out.println(ci.calcArea());
+        System.out.println(ci.calculatePerimeter());
+        
+        System.out.println(" ");
+        ci.print();
+
+
 
         }
 
