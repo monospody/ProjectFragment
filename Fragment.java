@@ -39,7 +39,6 @@ public class Fragment {
         denominator=denominator/comDivisor;
         System.out.println(numerator+" / "+denominator);
     }
-
     public int extendFragment() {
         return 0;
     }
@@ -64,8 +63,8 @@ public class Fragment {
     }
 
     private int getLargestComDivisor() {
-        int absNumerator=Math.abs(numerator);
-        int absDenominator=Math.abs(denominator);
+       int absNumerator= Math.abs(numerator);
+        int absDenominator= Math.abs(denominator);
         int comDivisor=absNumerator>absDenominator?absNumerator:absDenominator;
         while (numerator%comDivisor!=0 || denominator%comDivisor!=0) {
             comDivisor--;
@@ -84,6 +83,14 @@ public class Fragment {
     @Override
     public String toString() {
         return numerator+" / "+denominator;
+    }
+
+
+    public MixedNumber getMixedNumber(){
+        int value = numerator/denominator;
+        Fragment f = new Fragment(numerator/denominator, denominator);
+        return new MixedNumber(value,f);
+
     }
 
 
