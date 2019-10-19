@@ -25,27 +25,27 @@ public class Rectangle {
         this.fill= fill;
     }
     public int calcArea(){ //obsah
-    return a*b;
+        return a*b;
     }
     public int calculatePerimeter(){ //obvod
-    return 2*(a+b);
+        return 2*(a+b);
     }
     public double calcDiagonal(){ //diagonala
-    return Math.sqrt(a*a+b*b);
+        return Math.sqrt(a*a+b*b);
 
     }
     public void showRectangle(){
         System.out.println(" ");
-            for (int rows = 1; rows <= b; rows++) {
-                for (int spaces = 1; spaces <= a; spaces++) {
-                    if (rows == 1 || rows == b || spaces == 1 || spaces == a) {
-                       System.out.print(character);
-                    } else {
-                        System.out.print(" ");
-                    }
+        for (int rows = 1; rows <= b; rows++) {
+            for (int spaces = 1; spaces <= a; spaces++) {
+                if (rows == 1 || rows == b || spaces == 1 || spaces == a) {
+                    System.out.print(character);
+                } else {
+                    System.out.print(" ");
                 }
-                System.out.println(" ");
             }
+            System.out.println(" ");
+        }
         System.out.println(" ");
         if(fill){
             for (int rows = 1; rows <= b; rows++) {
@@ -61,7 +61,7 @@ public class Rectangle {
         System.out.println(toString());
     }
 
-@Override
+    @Override
     public String toString() {
         return "First part is: "+a+" Second part is: "+b;
     }

@@ -11,11 +11,10 @@ public class Main {
         Fragment f5=new Fragment(f1);
 
         System.out.println(f1.toString());
-       // f1.changeToBasicShape();
+        // f1.changeToBasicShape();
 
         System.out.println(f1.toString());
         f1.opposite();
-
 
         MixedNumber mn = new MixedNumber(3,1,3);
         System.out.println(mn.toString());
@@ -40,13 +39,17 @@ public class Main {
         Circle ci = new Circle (5);
         System.out.println(ci.calcArea());
         System.out.println(ci.calculatePerimeter());
-        
+
         System.out.println(" ");
         ci.print();
 
+        Bank ba = new Bank("Tatrabanka");
+        System.out.println(" ");
+        System.out.println(ba.convert(5,"HUF"));
+        System.out.println(Bank.loan(1000,4.5,20));
 
-
-        }
 
     }
+
+}
 

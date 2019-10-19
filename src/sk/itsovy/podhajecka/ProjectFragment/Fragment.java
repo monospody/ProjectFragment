@@ -63,7 +63,7 @@ public class Fragment {
     }
 
     private int getLargestComDivisor() {
-       int absNumerator= Math.abs(numerator);
+        int absNumerator= Math.abs(numerator);
         int absDenominator= Math.abs(denominator);
         int comDivisor=absNumerator>absDenominator?absNumerator:absDenominator;
         while (numerator%comDivisor!=0 || denominator%comDivisor!=0) {

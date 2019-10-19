@@ -32,7 +32,7 @@ public class MixedNumber {
         fragment.changeToBasicShape();
     }
 
-@Override
+    @Override
     public String toString() {
         return number+" "+fragment.toString();
     }
@@ -43,7 +43,7 @@ public class MixedNumber {
         return newFragment;
 
     }
-   public double a(){
+    public double a(){
         double desatinne = ((float)fragment.getNumerator())/fragment.getDenominator();
         return (double)(number+desatinne);
     }
